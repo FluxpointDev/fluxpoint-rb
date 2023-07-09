@@ -1,6 +1,9 @@
 require_relative "./structures/request"
 require_relative "./structures/test"
 require_relative "./structures/misc"
+require_relative "./structures/color"
+require_relative "./structures/convert"
+require_relative "./structures/list"
 
 module Fluxpoint
   class FluxpointClient
@@ -11,6 +14,9 @@ module Fluxpoint
       @request = Request.new(@token)
       @test = Test.new(@request)
       @misc = Misc.new(@request)
+      @color = Color.new(@request)
+      @convert = Convert.new(@request)
+      @list = List.new(@request)
     end
   end
 end
