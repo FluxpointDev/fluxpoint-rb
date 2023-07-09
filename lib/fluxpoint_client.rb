@@ -4,6 +4,7 @@ require_relative "./structures/misc"
 require_relative "./structures/color"
 require_relative "./structures/convert"
 require_relative "./structures/list"
+require_relative "./structures/image"
 
 module Fluxpoint
   class FluxpointClient
@@ -17,6 +18,7 @@ module Fluxpoint
       @color = Color.new(@request)
       @convert = Convert.new(@request)
       @list = List.new(@request)
+      @images = Image.new(@request)
     end
   end
 end
